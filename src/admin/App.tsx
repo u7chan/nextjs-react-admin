@@ -8,9 +8,9 @@ const PostList = (props: any) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
-        <TextField source='title' />
-        <TextField source='body' />
+        <TextField source="id" />
+        <TextField source="title" />
+        <TextField source="body" />
       </Datagrid>
     </List>
   )
@@ -18,7 +18,7 @@ const PostList = (props: any) => {
 
 const App = () => (
   <Admin dataProvider={dataProvider}>
-    <Resource name='posts' list={PostList} />
+    <Resource name="posts" list={PostList} />
     {/* <Resource name="comments" list={ListGuesser} /> */}
   </Admin>
 )
