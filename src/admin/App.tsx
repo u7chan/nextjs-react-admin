@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Admin, Resource, List, Datagrid, TextField } from 'react-admin'
 import jsonServerProvider from 'ra-data-json-server'
 
-const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com')
+const dataProvider = jsonServerProvider(process.env.NEXT_PUBLIC_API_BASE_URL)
 
 const PostList = (props: any) => {
   return (
